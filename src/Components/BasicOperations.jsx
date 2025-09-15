@@ -9,6 +9,9 @@ export default function BasicOperations() {
     // create a useState For Toggle Text that is Hello->GoodBye->Hello
     const [toggle,setToggle] =useState("Hello");
 
+    // create a useState for Show And Hide Password
+    const [show,setShow] =useState(false);
+
     // Create handleIncrement functions
     const  handleIncrement=()=>{
         setCount(count+1);
@@ -21,10 +24,14 @@ export default function BasicOperations() {
     const handleReset=()=>{
         setCount(0);
     }
-
+    //create a functions to toogle text
     const handleToggleText=()=>{
         // Here we are using the ternary operators
         setToggle((prevText)=>prevText==="Hello"? "GoodBye":"Hello")
+    }
+    //create a functions to Hide And Show Password:
+    const handleShowHide=()=>{
+        setShow((prev)=>!prev);
     }
   return (
     <div>
@@ -45,6 +52,17 @@ export default function BasicOperations() {
         <h3>Toggle Text:</h3>
         <button onClick={handleToggleText} >ToggleText</button>
         <h1>{toggle}</h1>
+
+        {/* Show/Hide Password */}
+        <div id='formContainer'>
+            <label htmlFor="password"></label>
+            <input id='password' type={show?"text":"password"} placeholder='Enter your password:'/>
+            <button onClick={handleShowHide}
+            
+            >{show?"Hide":"Show"}</button>
+
+
+        </div>
     
     </div>
   )
