@@ -31,6 +31,7 @@ export default function BasicOperations() {
         <button onClick={handleDecrement}>Decrement:</button>
         {/* Reset Button */}
         <button onClick={handleReset}>Reset:</button>
+    
     </div>
   )
 }
