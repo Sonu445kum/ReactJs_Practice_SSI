@@ -16,6 +16,11 @@ import "./App.css";
 import MessageComp from "./Components/Props/MessageComp"
 import UserInfo from "./Components/Props/UserInfo"
 import Default_Greeting from "./Components/Deafult_Props/Default_Greeting"
+import DisplayListItems from "./Components/List_Conditional_Rendering/DisplayListItems"
+import Ternary_Operator from "./Components/List_Conditional_Rendering/Ternary_Operator"
+import Logical_And_operator from "./Components/List_Conditional_Rendering/Logical_And_operator"
+import Inline_Conditional_Function from "./Components/List_Conditional_Rendering/Inline_Conditional_Function"
+import List_Task from "./Components/List_Conditional_Rendering/List_Task"
 
 
 function App() {
@@ -74,6 +79,20 @@ function App() {
       {/* passing some inputs */}
       <Default_Greeting name="Sonu" message="Hi there i M Sonu"/>
 
+      {/* List  */}
+      <DisplayListItems/>
+
+      {/* Ternary Operator */}
+      <Ternary_Operator/>
+
+      {/* Logical Operators */}
+      <Logical_And_operator/>
+
+      {/* Inline Conditional Functions */}
+      <Inline_Conditional_Function/>
+
+      {/* Rendering List of Task */}
+      <List_Task/>
     </>
   )
 }
