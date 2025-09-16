@@ -15,6 +15,7 @@ import ButtonComp from "./Components/Props/ButtonComp"
 import "./App.css";
 import MessageComp from "./Components/Props/MessageComp"
 import UserInfo from "./Components/Props/UserInfo"
+import Default_Greeting from "./Components/Deafult_Props/Default_Greeting"
 
 
 function App() {
@@ -65,6 +66,13 @@ function App() {
     </div>
 
       <UserInfo userDeatils={userDeatils}/>
+      <Greeting/>
+
+      {/* Deafult Props */}
+      <Default_Greeting/>
+
+      {/* passing some inputs */}
+      <Default_Greeting name="Sonu" message="Hi there i M Sonu"/>
 
     </>
   )
