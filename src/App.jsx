@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import AddAndRemoveTodo from "./Components/AddAndRemoveTodo"
 import AddRandomNum from "./Components/AddRandomNum"
 import ChangeBackgroundClor from "./Components/ChangeBackgroundClor"
@@ -31,6 +32,23 @@ function App() {
       <FormValidate/>
 
       <AddAndRemoveTodo/>
+=======
+import { useState } from 'react'
+
+import './App.css'
+import BasicOperations from './Components/BasicOperations'
+
+function App() {
+  return (
+    <>
+     {/* Create a "Hello World!" React app with a simple component. */}
+     {/* <h1>Hello World!</h1> */}
+     
+     <BasicOperations/>
+
+    
+
+>>>>>>> f4ef83908d19d6a2ba8713f8937cadf1a9834094
     </>
   )
 }

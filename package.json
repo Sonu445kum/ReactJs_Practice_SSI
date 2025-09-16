@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "usestatepractice",
+=======
+  "name": "demoapp",
+>>>>>>> f4ef83908d19d6a2ba8713f8937cadf1a9834094
   "private": true,
   "version": "0.0.0",
   "type": "module",
