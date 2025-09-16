@@ -1,0 +1,9 @@
+Create a component Greeting that takes a name prop and displays Hello, {name}!.
+
+Create a UserCard component that accepts name, age, and email as props and displays them.
+
+Create a Button component that receives text and onClick as props. Clicking the button should call the onClick function.
+
+Create a Message component that displays text differently based on a type prop (success, error, info).
+
+Create a Profile component that receives a user object as a prop and shows the user’s details.
