@@ -1,13 +1,14 @@
-<<<<<<< HEAD
-import AddAndRemoveTodo from "./Components/AddAndRemoveTodo"
-import AddRandomNum from "./Components/AddRandomNum"
-import ChangeBackgroundClor from "./Components/ChangeBackgroundClor"
-import CounterApp from "./Components/CounterApp"
-import FormValidate from "./Components/FormValidate"
-import IncreaseLikeBtn from "./Components/IncreaseLikeBtn"
-import ShowHidePass from "./Components/ShowHidePass"
-import ToggleText from "./Components/ToggleText"
-import UpdateProperty from "./Components/UpdateProperty"
+
+import AddAndRemoveTodo from "./Components/UseState/AddAndRemoveTodo"
+import AddRandomNum from "./Components/UseState/AddRandomNum"
+import ChangeBackgroundClor from "./Components/UseState/ChangeBackgroundClor"
+import CounterApp from "./Components/UseState/CounterApp"
+import FormValidate from "./Components/UseState/FormValidate"
+import IncreaseLikeBtn from "./Components/UseState/IncreaseLikeBtn"
+import Profile from "./Components/Props/Profile"
+import ShowHidePass from "./Components/UseState/ShowHidePass"
+import ToggleText from "./Components/UseState/ToggleText"
+import UpdateProperty from "./Components/UseState/UpdateProperty"
 
 
 
@@ -32,25 +33,13 @@ function App() {
       <FormValidate/>
 
       <AddAndRemoveTodo/>
-=======
-import { useState } from 'react'
 
-import './App.css'
-import BasicOperations from './Components/BasicOperations'
+      {/* Props Concept */}
+      <Profile name="Sonu" email="sonuroy1629@gmail.com" password="Sonu@123"/>
 
-function App() {
-  return (
-    <>
-     {/* Create a "Hello World!" React app with a simple component. */}
-     {/* <h1>Hello World!</h1> */}
-     
-     <BasicOperations/>
 
-    
-
->>>>>>> f4ef83908d19d6a2ba8713f8937cadf1a9834094
     </>
   )
 }
 
-export default App
+export default App;
