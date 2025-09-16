@@ -1,0 +1,49 @@
+Beginner Level
+
+Create a counter app with Increment, Decrement, and Reset buttons using useState.
+
+Build a button that toggles text between "Hello" and "Goodbye" using useState.
+
+Create an input field where typing updates the text in real-time using useState.
+
+Build a password field with a button to toggle between "show" and "hide" password.
+
+Create a button that changes the background color of a <div> using useState.
+
+
+Intermediate Level
+
+Store an array of numbers in state and add a random number to the array on button click.
+
+Manage an object in state { name, age } and update only one property at a time.
+
+Create a Like button that increases the count each time it’s clicked.
+
+Build a form with multiple inputs (name, email, password) and manage them using useState.
+
+Implement a Todo List app that allows adding and removing items using useState
+
+
+Advanced Level
+
+Create a button that cycles through an array of colors and updates the background each time it’s clicked.
+
+Build a component that displays the current date and time and updates only when a button is clicked.
+
+Create a quiz app where selecting the correct answer increases the score using useState.
+
+Build a multi-step form where clicking “Next” updates the active step stored in useState.
+
+Create a list of products in state and add a button to remove a product by id.
+
+Expert Level
+
+Create a Dark Mode/Light Mode toggle using useState.
+
+Build a button that increases/decreases font size of text using useState.
+
+Track the number of characters typed in a textarea using useState.
+
+Create a Shopping Cart where you can add items, remove items, and track total price using useState.
+
+Implement a Stopwatch with Start, Pause, and Reset buttons using useState and setInterval.

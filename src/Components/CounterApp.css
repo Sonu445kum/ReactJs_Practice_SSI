@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+#btnContainer{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    color: black;
+    width: 300px;
+    height: 50x;
+}
