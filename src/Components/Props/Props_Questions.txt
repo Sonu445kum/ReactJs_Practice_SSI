@@ -7,3 +7,13 @@ Create a Button component that receives text and onClick as props. Clicking the 
 Create a Message component that displays text differently based on a type prop (success, error, info).
 
 Create a Profile component that receives a user object as a prop and shows the user’s details.
+
+Create a List component that takes an array of items as a prop and renders them in an unordered list.
+
+Create a Counter component with a step prop that increments the count by that step value.
+
+Create a Card component that accepts children and renders them inside a styled card.
+
+Create a TodoItem component that receives a todo object and a toggleComplete function as props.
+
+Create a ThemeButton component that changes its background based on a theme prop (light or dark).

@@ -14,6 +14,7 @@ import UserCard from "./Components/Props/UserCard"
 import ButtonComp from "./Components/Props/ButtonComp"
 import "./App.css";
 import MessageComp from "./Components/Props/MessageComp"
+import UserInfo from "./Components/Props/UserInfo"
 
 
 function App() {
@@ -21,6 +22,14 @@ function App() {
   // create a functions for handleClick
   const handleClick=()=>{
     alert("The button is Clickable..!!")
+  }
+
+  // here i Creating the Object of UserDetails:
+  const userDeatils ={
+    name:"Sonu",
+    age:27,
+    Address:"Bihar Patna",
+    Pincode:842001
   }
  
   return (
@@ -54,6 +63,8 @@ function App() {
       <MessageComp text="Here is some information." type="info" />
       <MessageComp text="Default message with no type." />
     </div>
+
+      <UserInfo userDeatils={userDeatils}/>
 
     </>
   )
