@@ -28,6 +28,12 @@ import CountEffectWithDependArr from "./Components/UseEffects/CountEffectWithDep
 import CleanUpFunc from "./Components/CleanUpFunctions/CleanUpFunc"
 import DataFetching from "./Components/UseCase_UseEffects/DataFetching"
 import ParentCompo from "./Components/PropDrilling/ParentCompo"
+import { createContext } from "react"
+import ParentCom from "./Components/UseContext/ParentCom"
+
+
+// create here useContext
+ export const UserContext =createContext();
 
 
 function App() {
@@ -51,6 +57,13 @@ function App() {
     email:"sonuroy1629@gmail.com",
     password:"sonu@123",
     age:22,
+  }
+  // create An Object as Animal for useContext
+  const Animal ={
+    name:"Cow",
+    color:"White",
+    weight:"80Kg",
+    age:"23"
   }
  
   return (
@@ -129,6 +142,11 @@ function App() {
 
       {/* Prop Drilling */}
       <ParentCompo Person={Person}/>
+
+      {/* UseContext */}
+      <UserContext.Provider value={Animal}>
+        <ParentCom/>
+      </UserContext.Provider>
     </>
   )
 }
