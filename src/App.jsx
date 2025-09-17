@@ -25,6 +25,9 @@ import Controlled_Input from "./Components/Controlled_Uncontrolled/Controlled_In
 import SignupForm from "./Components/Controlled_Uncontrolled/SignupForm"
 import CountEffects from "./Components/UseEffects/CountEffects"
 import CountEffectWithDependArr from "./Components/UseEffects/CountEffectWithDependArr"
+import CleanUpFunc from "./Components/CleanUpFunctions/CleanUpFunc"
+import DataFetching from "./Components/UseCase_UseEffects/DataFetching"
+import ParentCompo from "./Components/PropDrilling/ParentCompo"
 
 
 function App() {
@@ -40,6 +43,14 @@ function App() {
     age:27,
     Address:"Bihar Patna",
     Pincode:842001
+  }
+
+  // Here i m Create An Object as Person which pass the Props from the Parent->Child-GrandChild
+  const Person={
+    name:"Sonu",
+    email:"sonuroy1629@gmail.com",
+    password:"sonu@123",
+    age:22,
   }
  
   return (
@@ -109,6 +120,15 @@ function App() {
 
       {/* UseEffect With Dependency Array */}
       <CountEffectWithDependArr/>
+
+      {/* CleanUp Functions */}
+      <CleanUpFunc/>
+
+      {/* Data Fetching */}
+      <DataFetching/>
+
+      {/* Prop Drilling */}
+      <ParentCompo Person={Person}/>
     </>
   )
 }

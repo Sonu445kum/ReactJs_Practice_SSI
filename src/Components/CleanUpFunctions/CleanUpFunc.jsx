@@ -1,21 +1,32 @@
-import React from 'react'
-// Agar aap event listeners ya timer set karte ho, cleanup zaruri hai.
-// useEffect return me ek function allow karta hai jo component unmount hone
-//  se pehle run hota hai
-export default function CleanUpFunc() {
-    // Create a UseEffect to the CleanUp Functions
-    useEffect(() => {
-  const timer = setInterval(() => {
-    console.log("Timer running");
-  }, 1000);
+import React, { useEffect, useState } from "react";
 
-  return () => {
-    clearInterval(timer);
-    console.log("Cleanup on unmount");
+export default function CleanUpDemo() {
+  const [show, setShow] = useState(true);
+
+  // Ye wala component sirf timer aur cleanup handle karega
+  const CleanUpFunc = () => {
+    useEffect(() => {
+      const timer = setInterval(() => {
+        console.log("Timer running");
+      }, 1000);
+
+      return () => {
+        clearInterval(timer);
+        console.log("Cleanup on unmount");
+      };
+    }, []);
+
+    return <h2>CleanUpFunc Mounted (Check console)</h2>;
   };
-}, []);
 
   return (
-    <div>CleanUpFunc</div>
-  )
+    <div>
+      <h1>Cleanup Function Example</h1>
+      <button onClick={() => setShow(!show)}>
+        {show ? "Unmount Component" : "Mount Component"}
+      </button>
+      <hr />
+      {show && <CleanUpFunc />}
+    </div>
+  );
 }
