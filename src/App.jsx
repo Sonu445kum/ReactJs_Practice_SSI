@@ -21,6 +21,7 @@ import Ternary_Operator from "./Components/List_Conditional_Rendering/Ternary_Op
 import Logical_And_operator from "./Components/List_Conditional_Rendering/Logical_And_operator"
 import Inline_Conditional_Function from "./Components/List_Conditional_Rendering/Inline_Conditional_Function"
 import List_Task from "./Components/List_Conditional_Rendering/List_Task"
+import Controlled_Input from "./Components/Controlled_Uncontrolled/Controlled_Input"
 
 
 function App() {
@@ -93,6 +94,9 @@ function App() {
 
       {/* Rendering List of Task */}
       <List_Task/>
+
+      {/* Controlled And Uncontrolled Componenets */}
+      <Controlled_Input/>
     </>
   )
 }
