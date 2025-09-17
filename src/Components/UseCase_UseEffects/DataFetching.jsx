@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 export default function DataFetching() {
   // State to store fetched data
-  const [data, setData] = useState([]);   //  []
+  const [data, setData] = useState(null);   //  []
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 

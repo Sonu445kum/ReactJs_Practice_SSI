@@ -32,6 +32,10 @@ import { createContext } from "react"
 import ParentCom from "./Components/UseContext/ParentCom"
 import CounterWithReducers from "./Components/UseReducers/CounterWithReducers"
 import FormReducers from "./Components/UseReducers/FormReducers"
+import UseCallbackFunc from "./Components/UseCallback/UseCallbackFunc"
+import ExpensiveCalc from "./Components/UseMemo/ExpensiveCalc"
+import InputFocus from "./Components/UseRef'/InputFocus"
+import MemoizationFunc from "./Components/Memoizations/MemoizationFunc"
 
 
 // create here useContext
@@ -150,11 +154,23 @@ function App() {
         <ParentCom/>
       </UserContext.Provider>
 
-      {/* UseReducers */}
+      {/* UseReducers Hooks */}
       <CounterWithReducers/>
 
-      {/* FormReducers */}
+      {/* FormReducers Hooks */}
       <FormReducers/>
+
+      {/* UseCallback Hooks */}
+      <UseCallbackFunc/>
+
+      {/* UseMemo Hooks */}
+      <ExpensiveCalc/>
+
+      {/* UseRef Hooks */}
+      <InputFocus/>
+
+      {/* Memoizations */}
+      <MemoizationFunc/>
     </>
   )
 }
