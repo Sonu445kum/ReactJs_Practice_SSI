@@ -30,6 +30,7 @@ import DataFetching from "./Components/UseCase_UseEffects/DataFetching"
 import ParentCompo from "./Components/PropDrilling/ParentCompo"
 import { createContext } from "react"
 import ParentCom from "./Components/UseContext/ParentCom"
+import CounterWithReducers from "./Components/UseReducers/CounterWithReducers"
 
 
 // create here useContext
@@ -147,6 +148,9 @@ function App() {
       <UserContext.Provider value={Animal}>
         <ParentCom/>
       </UserContext.Provider>
+
+      {/* UseReducers */}
+      <CounterWithReducers/>
     </>
   )
 }
