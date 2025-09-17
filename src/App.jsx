@@ -31,6 +31,7 @@ import ParentCompo from "./Components/PropDrilling/ParentCompo"
 import { createContext } from "react"
 import ParentCom from "./Components/UseContext/ParentCom"
 import CounterWithReducers from "./Components/UseReducers/CounterWithReducers"
+import FormReducers from "./Components/UseReducers/FormReducers"
 
 
 // create here useContext
@@ -151,6 +152,9 @@ function App() {
 
       {/* UseReducers */}
       <CounterWithReducers/>
+
+      {/* FormReducers */}
+      <FormReducers/>
     </>
   )
 }
