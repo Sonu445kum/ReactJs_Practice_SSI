@@ -36,6 +36,7 @@ import UseCallbackFunc from "./Components/UseCallback/UseCallbackFunc"
 import ExpensiveCalc from "./Components/UseMemo/ExpensiveCalc"
 import InputFocus from "./Components/UseRef'/InputFocus"
 import MemoizationFunc from "./Components/Memoizations/MemoizationFunc"
+import Shop from "./Components/Exercise/ShoppingSystem/Shop"
 
 
 // create here useContext
@@ -171,6 +172,12 @@ function App() {
 
       {/* Memoizations */}
       <MemoizationFunc/>
+
+      {/* Shopping System */}
+      <div style={{ padding: "20px" }}>
+      <h1> Shopping Cart</h1>
+      <Shop />  
+    </div>
     </>
   )
 }
