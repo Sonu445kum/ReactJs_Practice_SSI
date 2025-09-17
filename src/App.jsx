@@ -23,6 +23,8 @@ import Inline_Conditional_Function from "./Components/List_Conditional_Rendering
 import List_Task from "./Components/List_Conditional_Rendering/List_Task"
 import Controlled_Input from "./Components/Controlled_Uncontrolled/Controlled_Input"
 import SignupForm from "./Components/Controlled_Uncontrolled/SignupForm"
+import CountEffects from "./Components/UseEffects/CountEffects"
+import CountEffectWithDependArr from "./Components/UseEffects/CountEffectWithDependArr"
 
 
 function App() {
@@ -101,6 +103,12 @@ function App() {
 
       {/* SignUpForm */}
       <SignupForm/>
+
+      {/* Useffects Problems */}
+      {/* <CountEffects/> */}
+
+      {/* UseEffect With Dependency Array */}
+      <CountEffectWithDependArr/>
     </>
   )
 }
