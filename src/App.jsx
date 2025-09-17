@@ -22,6 +22,7 @@ import Logical_And_operator from "./Components/List_Conditional_Rendering/Logica
 import Inline_Conditional_Function from "./Components/List_Conditional_Rendering/Inline_Conditional_Function"
 import List_Task from "./Components/List_Conditional_Rendering/List_Task"
 import Controlled_Input from "./Components/Controlled_Uncontrolled/Controlled_Input"
+import SignupForm from "./Components/Controlled_Uncontrolled/SignupForm"
 
 
 function App() {
@@ -97,6 +98,9 @@ function App() {
 
       {/* Controlled And Uncontrolled Componenets */}
       <Controlled_Input/>
+
+      {/* SignUpForm */}
+      <SignupForm/>
     </>
   )
 }
