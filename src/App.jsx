@@ -54,6 +54,7 @@ import Contact from "./Components/React-Router/Contact"
 import NotFound from "./Components/React-Router/NotFound"
 import UserProfile from "./Components/React-Router/UserProfile"
 import CounterClass from "./Components/ClassComponens/CounterClass"
+import CounterRTK from "./Components/ReduxToolkit/CounterRTk"
 
 
 // create here useContext
@@ -213,6 +214,10 @@ function App() {
 
       {/* Class Componenets */}
       <CounterClass/>
+
+
+      {/* Redux Toolkit */}
+      <CounterRTK/>
     </>
   )
 }
