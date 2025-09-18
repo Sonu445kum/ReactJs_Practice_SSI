@@ -40,150 +40,175 @@ import Shop from "./Components/Exercise/ShoppingSystem/Shop"
 import TimerDemo from "./Components/CleanUpFunctions/TimerDemo"
 import EventsListeners from "./Components/CleanUpFunctions/EventsListeners"
 
+// import Browser Router
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+
+} from "react-router-dom";
+import Layout from "./Components/React-Router/Layout"
+import Home from "./Components/React-Router/Home"
+import About from "./Components/React-Router/About"
+import Contact from "./Components/React-Router/Contact"
+import NotFound from "./Components/React-Router/NotFound"
+import UserProfile from "./Components/React-Router/UserProfile"
+
 
 // create here useContext
- export const UserContext =createContext();
+export const UserContext = createContext();
 
 
 function App() {
 
   // create a functions for handleClick
-  const handleClick=()=>{
+  const handleClick = () => {
     alert("The button is Clickable..!!")
   }
 
   // here i Creating the Object of UserDetails:
-  const userDeatils ={
-    name:"Sonu",
-    age:27,
-    Address:"Bihar Patna",
-    Pincode:842001
+  const userDeatils = {
+    name: "Sonu",
+    age: 27,
+    Address: "Bihar Patna",
+    Pincode: 842001
   }
 
   // Here i m Create An Object as Person which pass the Props from the Parent->Child-GrandChild
-  const Person={
-    name:"Sonu",
-    email:"sonuroy1629@gmail.com",
-    password:"sonu@123",
-    age:22,
+  const Person = {
+    name: "Sonu",
+    email: "sonuroy1629@gmail.com",
+    password: "sonu@123",
+    age: 22,
   }
   // create An Object as Animal for useContext
-  const Animal ={
-    name:"Cow",
-    color:"White",
-    weight:"80Kg",
-    age:"23"
+  const Animal = {
+    name: "Cow",
+    color: "White",
+    weight: "80Kg",
+    age: "23"
   }
- 
+
   return (
     <>
       <h1>Hello Sonu..!! Nice To Meet You!!</h1>
-      <CounterApp/>
+      <CounterApp />
       <br />
-      <ToggleText/>
+      <ToggleText />
       <br /><br />
-      <ShowHidePass/>
+      <ShowHidePass />
       <br /> <br />
-      <ChangeBackgroundClor/>
-      <AddRandomNum/>
+      <ChangeBackgroundClor />
+      <AddRandomNum />
 
-      <UpdateProperty/>
+      <UpdateProperty />
 
-      <IncreaseLikeBtn/>
+      <IncreaseLikeBtn />
 
-      <FormValidate/>
+      <FormValidate />
 
-      <AddAndRemoveTodo/>
+      <AddAndRemoveTodo />
 
       {/* Props Concept */}
-      <Profile name="Sonu" email="sonuroy1629@gmail.com" password="Sonu@123"/>
-      <Greeting name="Anushka"/>
-      <UserCard name="Thanos" age="20" email="thanos@gmail.com"/>
-      <ButtonComp text="hi there i sonu" onClick={handleClick}/>
+      <Profile name="Sonu" email="sonuroy1629@gmail.com" password="Sonu@123" />
+      <Greeting name="Anushka" />
+      <UserCard name="Thanos" age="20" email="thanos@gmail.com" />
+      <ButtonComp text="hi there i sonu" onClick={handleClick} />
       <div>
-      <MessageComp text="Operation successful!" type="success" />
-      <MessageComp text="Something went wrong!" type="error" />
-      <MessageComp text="Here is some information." type="info" />
-      <MessageComp text="Default message with no type." />
-    </div>
+        <MessageComp text="Operation successful!" type="success" />
+        <MessageComp text="Something went wrong!" type="error" />
+        <MessageComp text="Here is some information." type="info" />
+        <MessageComp text="Default message with no type." />
+      </div>
 
-      <UserInfo userDeatils={userDeatils}/>
-      <Greeting/>
+      <UserInfo userDeatils={userDeatils} />
+      <Greeting />
 
       {/* Deafult Props */}
-      <Default_Greeting/>
+      <Default_Greeting />
 
       {/* passing some inputs */}
-      <Default_Greeting name="Sonu" message="Hi there i M Sonu"/>
+      <Default_Greeting name="Sonu" message="Hi there i M Sonu" />
 
       {/* List  */}
-      <DisplayListItems/>
+      <DisplayListItems />
 
       {/* Ternary Operator */}
-      <Ternary_Operator/>
+      <Ternary_Operator />
 
       {/* Logical Operators */}
-      <Logical_And_operator/>
+      <Logical_And_operator />
 
       {/* Inline Conditional Functions */}
-      <Inline_Conditional_Function/>
+      <Inline_Conditional_Function />
 
       {/* Rendering List of Task */}
-      <List_Task/>
+      <List_Task />
 
       {/* Controlled And Uncontrolled Componenets */}
-      <Controlled_Input/>
+      <Controlled_Input />
 
       {/* SignUpForm */}
-      <SignupForm/>
+      <SignupForm />
 
       {/* Useffects Problems */}
       {/* <CountEffects/> */}
 
       {/* UseEffect With Dependency Array */}
-      <CountEffectWithDependArr/>
+      <CountEffectWithDependArr />
 
       {/* CleanUp Functions */}
-      <CleanUpFunc/>
-      <TimerDemo/>
-      <EventsListeners/>
+      <CleanUpFunc />
+      <TimerDemo />
+      <EventsListeners />
 
       {/* Data Fetching */}
-      <DataFetching/>
+      <DataFetching />
 
       {/* Prop Drilling */}
-      <ParentCompo Person={Person}/>
+      <ParentCompo Person={Person} />
 
       {/* UseContext */}
       <UserContext.Provider value={Animal}>
-        <ParentCom/>
+        <ParentCom />
       </UserContext.Provider>
 
       {/* UseReducers Hooks */}
-      <CounterWithReducers/>
+      <CounterWithReducers />
 
       {/* FormReducers Hooks */}
-      <FormReducers/>
+      <FormReducers />
 
       {/* UseCallback Hooks */}
-      <UseCallbackFunc/>
+      <UseCallbackFunc />
 
       {/* UseMemo Hooks */}
-      <ExpensiveCalc/>
+      <ExpensiveCalc />
 
       {/* UseRef Hooks */}
-      <InputFocus/>
+      <InputFocus />
 
       {/* Memoizations */}
-      <MemoizationFunc/>
+      <MemoizationFunc />
 
       {/* Shopping System */}
       <div style={{ padding: "20px" }}>
-      <h1> Shopping Cart</h1>
-      <Shop />  
-    </div>
+        <h1> Shopping Cart</h1>
+        <Shop />
+      </div>
 
-    {/*  */}
+      {/* React-Router Dom */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="users/:id" element={<UserProfile />} />
+            <Route path="*" element={<NotFound />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
