@@ -159,9 +159,9 @@ function App() {
       <CountEffectWithDependArr />
 
       {/* CleanUp Functions */}
-      <CleanUpFunc />
+      {/* <CleanUpFunc />
       <TimerDemo />
-      <EventsListeners />
+      <EventsListeners /> */}
 
       {/* Data Fetching */}
       <DataFetching />
