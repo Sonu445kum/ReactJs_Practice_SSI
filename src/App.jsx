@@ -37,6 +37,8 @@ import ExpensiveCalc from "./Components/UseMemo/ExpensiveCalc"
 import InputFocus from "./Components/UseRef'/InputFocus"
 import MemoizationFunc from "./Components/Memoizations/MemoizationFunc"
 import Shop from "./Components/Exercise/ShoppingSystem/Shop"
+import TimerDemo from "./Components/CleanUpFunctions/TimerDemo"
+import EventsListeners from "./Components/CleanUpFunctions/EventsListeners"
 
 
 // create here useContext
@@ -143,6 +145,8 @@ function App() {
 
       {/* CleanUp Functions */}
       <CleanUpFunc/>
+      <TimerDemo/>
+      <EventsListeners/>
 
       {/* Data Fetching */}
       <DataFetching/>
@@ -178,6 +182,8 @@ function App() {
       <h1> Shopping Cart</h1>
       <Shop />  
     </div>
+
+    {/*  */}
     </>
   )
 }
